@@ -1,0 +1,261 @@
+{
+    "categories": [
+        {
+            "icon": "Fish & Seafood",
+            "label": "Fish & Seafood"
+        },
+        {
+            "icon": "Mutton",
+            "label": "Mutton"
+        },
+        {
+            "icon": "Poultry",
+            "label": "Poultry"
+        },
+        {
+            "icon": "Steak and Fillet",
+            "label": "Steak and Fillet"
+        },
+        {
+            "icon": "Ready To Cook",
+            "label": "Ready To Cook"
+        }
+    ],
+    "productsByCategory": {
+        "Fish & Seafood": [
+            {
+                "id": "fish_1",
+                "name": "Barracuda / Cheelavu / Thinda (Large) - Whole Fresh Sea Fish Cleaned & Gutted",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "true",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/r/e/red-snapper_big.jpg",
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/p/i/pink_perch_whole_1.jpg",
+                    "http://static.freshtohome.com/cdn-cgi/image/width=250/https://static.freshtohome.com/media/catalog/product/k/i/kilimeen_-_marinated.jpg"
+                ],
+                "short_description": "Freshly caught large barracuda, expertly cleaned and ready to cook.",
+                "description": "Our premium large barracuda is sourced from pristine waters, cleaned, gutted, and packed with care. Perfect for grilling, curries, or baking. Rich in protein and omega-3 fatty acids."
+            },
+            {
+                "id": "fish_2",
+                "name": "Marine Sole Fish / Manthal / Repti (Large) - Whole Cleaned (480g to 500g Pack)",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "false",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/s/o/sole_fish_whole-clened_1.jpg",
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/i/n/indian_salmon_fillet.jpg",
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/s/o/sole_fish_m_whol_1.jpg"
+                ],
+                "short_description": "Soft and succulent red snapper fillets, perfect for pan-fry or bake.",
+                "description": "Our boneless red snapper fillets are hand-cut from the freshest catch, offering a delicate flavor and tender texture. Ideal for light, healthy meals and elegant seafood recipes."
+            },
+            {
+                "id": "fish_3",
+                "name": "Indian Salmon / Vazhmeen / Raavas / Gurjali (Medium) - Steaks (480g to 500g Pack)",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "false",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/i/n/indian_salmon_steaks.jpg"
+                ],
+                "short_description": "Whole red snapper for authentic seafood dishes.",
+                "description": "A complete whole fish, cleaned and prepared for your favorite recipes. Perfect for steaming, grilling, or baking with herbs and spices."
+            },
+            {
+                "id": "fish_4",
+                "name": "White Pomfret / Silver Pomfret / Avoli - Whole (480g to 500g Pack)",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "true",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/s/i/silver_pomfret_whole_2_3_2.jpg"
+                ],
+                "short_description": "Large red snapper with firm, flaky flesh.",
+                "description": "This large catch is perfect for hearty seafood recipes. The mild yet rich flavor makes it versatile for Indian and continental cuisines."
+            },
+            {
+                "id": "fish_5",
+                "name": "Large Marine Catfish / Etta Koori - Boneless Fillet (380g to 400g Pack)",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "true",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/c/a/catfish_fillets.jpg"
+                ],
+                "short_description": "Fresh red snapper with clean, sweet flavor.",
+                "description": "Our red snapper is carefully cleaned and packed for freshness. Fry, bake, or grill to enjoy its naturally delicious taste."
+            },
+            {
+                "id": "fish_6",
+                "name": "False White Sardine / Nandan (Thorny, great for fry) (Small)",
+                "net_weight": "480-500g",
+                "type": "Rohu",
+                "isAvailable": "false",
+                "price": "₹379.00",
+                "discounted_price": "₹239.00",
+                "price_per_pack": "₹239.00/pack",
+                "mrp_per_pack": "₹379.00/pack",
+                "usp": "₹0.48/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/f/a/false_white_sardine_5b3a58765d_1.jpg"
+                ],
+                "short_description": "Red snapper prepared for cooking with ease.",
+                "description": "Enjoy the clean, natural taste of freshly caught red snapper. Ready to be seasoned and cooked to perfection."
+            }
+        ],
+        "Mutton": [
+            {
+                "id": "mutton_1",
+                "name": "Fresh Mutton Curry Cut - Tender Pieces for Rich Gravies",
+                "net_weight": "480-500g",
+                "type": "Goat",
+                "isAvailable": "false",
+                "price": "₹699.00",
+                "discounted_price": "₹599.00",
+                "price_per_pack": "₹599.00/pack",
+                "mrp_per_pack": "₹699.00/pack",
+                "usp": "₹1.20/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/0/8/08-12-23_fth_tile_size_800x533_goat_shoulder_cut.jpg"
+                ],
+                "short_description": "Fresh goat meat, cut for perfect curry consistency.",
+                "description": "Sourced from healthy goats, this mutton is cut into medium-sized pieces, perfect for slow-cooked curries, biryanis, and stews."
+            },
+            {
+                "id": "mutton_2",
+                "name": "Premium Lamb - Chops (480 - 500g Pack)",
+                "net_weight": "480-500g",
+                "type": "Goat",
+                "isAvailable": "true",
+                "price": "₹749.00",
+                "discounted_price": "₹649.00",
+                "price_per_pack": "₹649.00/pack",
+                "mrp_per_pack": "₹749.00/pack",
+                "usp": "₹1.30/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/l/a/lamb-chops_4.jpg"
+                ],
+                "short_description": "Tender mutton ribs for grilling or roasting.",
+                "description": "Perfect for BBQ or oven-baked recipes, our mutton ribs and chops are rich in flavor and guaranteed to be tender."
+            }
+        ],
+        "Poultry": [
+            {
+                "id": "chicken_1",
+                "name": "Fresh Chicken Curry Cut - Juicy Pieces for Daily Cooking",
+                "net_weight": "480-500g",
+                "type": "Broiler",
+                "isAvailable": "true",
+                "price": "₹249.00",
+                "discounted_price": "₹199.00",
+                "price_per_pack": "₹199.00/pack",
+                "mrp_per_pack": "₹249.00/pack",
+                "usp": "₹0.40/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/p/r/premiumm_goat_mince_1__2_1.jpg"
+                ],
+                "short_description": "Freshly cut chicken for everyday curries.",
+                "description": "Tender chicken pieces ideal for curries, stews, and roasts. Cleaned, cut, and packed for convenience."
+            },
+            {
+                "id": "chicken_2",
+                "name": "Premium Antibiotic-residue-free Chicken Drumsticks (Pack of 6)",
+                "net_weight": "480-500g",
+                "type": "Broiler",
+                "isAvailable": "false",
+                "price": "₹279.00",
+                "discounted_price": "₹229.00",
+                "price_per_pack": "₹229.00/pack",
+                "mrp_per_pack": "₹279.00/pack",
+                "usp": "₹0.46/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/p/r/premium_chicken_drumsticks_1.jpg"
+                ],
+                "short_description": "Juicy chicken drumsticks ready for cooking.",
+                "description": "Perfect for frying, grilling, or baking, our chicken drumsticks are fresh, meaty, and full of flavor."
+            }
+        ],
+        "Steak and Fillet": [
+            {
+                "id": "steak_fillet_1",
+                "name": "Grouper / Reef Cod / Hamour / Kalava (Large) - Boneless Fillet (300g to 320g Pack)",
+                "net_weight": "480-500g",
+                "type": "Broiler",
+                "isAvailable": "true",
+                "price": "₹249.00",
+                "discounted_price": "₹199.00",
+                "price_per_pack": "₹199.00/pack",
+                "mrp_per_pack": "₹249.00/pack",
+                "usp": "₹0.40/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/g/r/grouper-reef-cod-large-fillet_1.jpg"
+                ],
+                "short_description": "Freshly cut chicken for everyday curries.",
+                "description": "Grouper & it's cousin the Hammour will probably be the national fish of the Arab world. Doesn't win a beauty contest but wins our award for the top 10 tastiest fish thanks to its super tasty soft meat with less bones Storage Instructions: Store under refrigeration at 4°C or below, in hygienic conditions Marketed By: Freshtohome Foods Private Limited No.201, 2nd FLOOR, Carlton Towers No.1, Old Airport Road, Kodihalli, Bangalore Urban, Karnataka - 560008"
+            }
+        ],
+        "Ready To Cook": [
+            {
+                "id": "ready_to_cook_1",
+                "name": "Yummy Seer Fish / Surmai / Vanjaram / Anjal Cutlets (Pack of 3, 140g to 160g)",
+                "net_weight": "480-500g",
+                "type": "Broiler",
+                "isAvailable": "true",
+                "price": "₹249.00",
+                "discounted_price": "₹199.00",
+                "price_per_pack": "₹199.00/pack",
+                "mrp_per_pack": "₹249.00/pack",
+                "usp": "₹0.40/g",
+                "quantity": "1",
+                "images": [
+                    "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/s/e/seer_fish_cutlet.jpg"
+                ],
+                "short_description": "Melt in your mouth amazing Fish Cutlets. Made with the perfect blend of fresh boneless fish (lots), mashed potatoes, spices, bread crumbs and love for food. Ready to fry & eat n eat n eat n...",
+                "description": "Storage Instructions: \n Always store in deep freezer at -18°C or below \n Marketed By: \n Freshtohome Foods Private Limited No.201, 2nd FLOOR, Carlton Towers No.1, Old Airport Road, Kodihalli, Bangalore Urban, Karnataka - 560008"
+            }
+        ]
+    },
+    "bannerImages": [
+        "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/l/a/lamb_curry_cut_4.jpg",
+        "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/m/u/mutton_shank-3pc.jpg",
+        "http://static.freshtohome.com/cdn-cgi/image/width=400/https://static.freshtohome.com/media/catalog/product/p/r/premiumm_goat_mince_1__2_1.jpg"
+    ]
+}
