@@ -59,16 +59,20 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       backgroundColor: const Color(0xFFF8F8F8),
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Product Details'),
+        toolbarHeight: 48, // default is 56, reduce to make it shorter
+         iconTheme: const IconThemeData(
+          color: Colors.white, // makes the back button (arrow) white
+        ),
+        backgroundColor: Colors.red,
+        title: const Text('Product Details', style: TextStyle(color: Colors.white, fontSize: 22),),
          centerTitle: true,
         elevation: 1,
         actions: [
           Stack(
             children: [
               IconButton(
-                icon: const Icon(Icons.shopping_cart, color: Colors.black,
-                size: 40, // increase this number for a bigger icon
+                icon: const Icon(Icons.shopping_cart, color: Colors.white,
+                size: 36, // increase this number for a bigger icon
                 
                 ),
                 onPressed: () {
@@ -96,8 +100,8 @@ class _DetailPageState extends State<DetailPage> {
                   right: 6,
                   top: 6,
                   child: CircleAvatar(
-                    radius: 8,
-                    backgroundColor: Colors.red,
+                    radius: 10,
+                    backgroundColor: Colors.green,
                     child: Text(
                       '$cartCount',
                       style: const TextStyle(fontSize: 12, color: Colors.white),
@@ -192,7 +196,7 @@ class _DetailPageState extends State<DetailPage> {
                 Text(
                   '₹${product['mrpPerPack']}',
                   style: const TextStyle(
-                    fontSize: 14,
+                    fontSize: 12,
                     decoration: TextDecoration.lineThrough,
                     color: Colors.grey,
                   ),
@@ -202,7 +206,7 @@ class _DetailPageState extends State<DetailPage> {
                 Text(
                   '₹${product['pricePerPack']}',
                   style: const TextStyle(
-                    fontSize: 18,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.green,
                   ),

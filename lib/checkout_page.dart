@@ -35,12 +35,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
 
   /// Load user data
   Future<void> loadUserData() async {
-      final prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
       _nameController.text = prefs.getString('name') ?? '';
       _emailController.text = prefs.getString('email') ?? '';
       _phoneController.text = prefs.getString('phone') ?? '';
       _addressController.text = prefs.getString('address') ?? '';
       _saveAddress = prefs.getBool('saveAddress') ?? false;
+    });
   }
 
   @override
@@ -74,9 +76,16 @@ class _CheckoutPageState extends State<CheckoutPage> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text("Checkout"),
+        toolbarHeight: 48,
+        title: const Text(
+          "Checkout",
+          style: TextStyle(fontSize: 22, color: Colors.white),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.white, // makes the back button (arrow) white
+        ),
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.red,
         elevation: 2,
       ),
       body: SingleChildScrollView(
@@ -177,11 +186,11 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 if (_formKey.currentState!.validate()) {
                   String finalMessage =
                       "${widget.cartMessage}\n\n"
+                      "🚚 Shipping Address:\n\n" // Label near top
                       "👤 Name: ${_nameController.text.trim()}\n"
                       "${_emailController.text.trim().isNotEmpty ? "📧 Email: ${_emailController.text.trim()}\n" : ""}"
                       "📱 Phone: ${_phoneController.text.trim()}\n"
-                      "📍 Address: ${_addressController.text.trim()}";
-
+                      "📍 ${_addressController.text.trim()}"; // Address with icon at bottom
                   widget.onPlaceOrder(
                     finalMessage,
                     _saveAddress,

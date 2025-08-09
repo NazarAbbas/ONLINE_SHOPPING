@@ -20,21 +20,28 @@ class HomePage extends StatelessWidget {
       () => Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.white,
-           centerTitle: true,
+          toolbarHeight: 48, // default is 56, reduce to make it shorter
+          backgroundColor: Colors.red,
+          centerTitle: true,
           elevation: 2,
-          title: const Text(
-            'ChopChop',
-            style: TextStyle(color: Colors.black, fontSize: 18),
+          title: Row(
+            crossAxisAlignment: CrossAxisAlignment.center, // vertical center alignment
+            mainAxisSize: MainAxisSize.min, // only take as much space as needed
+            children: const [
+              Text(
+                'ChopChop',
+                style: TextStyle(color: Colors.white, fontSize: 22),
+              ),
+            ],
           ),
-          iconTheme: const IconThemeData(color: Colors.black),
+          iconTheme: const IconThemeData(color: Colors.white),
           actions: [
             Stack(
               children: [
                 IconButton(
                   icon: const Icon(
                     Icons.shopping_cart,
-                    size: 40, // increase this number for a bigger icon
+                    size: 36, // increase this number for a bigger icon
                   ),
                   onPressed: () {
                     Get.to(
@@ -56,8 +63,8 @@ class HomePage extends StatelessWidget {
                     right: 6,
                     top: 6,
                     child: CircleAvatar(
-                      radius: 8,
-                      backgroundColor: Colors.red,
+                      radius: 10,
+                      backgroundColor: Colors.green,
                       child: Text(
                         '${controller.totalItemsInCart}',
                         style: const TextStyle(
@@ -163,7 +170,7 @@ class HomePage extends StatelessWidget {
   Widget _buildCategorySelector() {
     return Obx(
       () => SizedBox(
-        height: 35,
+        height: 50,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -318,7 +325,7 @@ class HomePage extends StatelessWidget {
                                           icon: const Icon(
                                             Icons.remove_circle_outline,
                                             color: Colors.redAccent,
-                                             size: 35.0,
+                                            size: 35.0,
                                           ),
                                           onPressed: () =>
                                               controller.updateQuantity(

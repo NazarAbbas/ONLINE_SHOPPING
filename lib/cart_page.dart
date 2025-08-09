@@ -51,8 +51,29 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('🛒 My Cart'),
-        backgroundColor: Colors.white,
+        toolbarHeight: 48, // default is 56, reduce to make it shorter
+        iconTheme: const IconThemeData(
+          color: Colors.white, // makes the back button (arrow) white
+        ),
+        title: Row(
+          mainAxisSize:
+              MainAxisSize.min, // keeps them together without stretching
+          crossAxisAlignment:
+              CrossAxisAlignment.center, // vertical center alignment
+          children: const [
+            Icon(Icons.shopping_cart, color: Colors.white, size: 22),
+            SizedBox(width: 6),
+            Text(
+              'My Cart',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 22,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+        backgroundColor: Colors.red,
         centerTitle: true,
         elevation: 2,
       ),
@@ -168,7 +189,7 @@ class _CartPageState extends State<CartPage> {
                                               style: const TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.green,
-                                                fontSize: 14,
+                                                fontSize: 16,
                                               ),
                                             ),
                                         ],
@@ -298,19 +319,29 @@ class _CartPageState extends State<CartPage> {
                       ),
                       onPressed: () {
                         String cartMessage = "🛒 *Order Details*\n\n";
-
+                        int totalItemsQty = 0;
                         for (var item in widget.cartItems) {
                           final qty = widget.productQuantities[item['id']] ?? 0;
                           if (qty > 0) {
+                             totalItemsQty += qty;
+                            final price = parsePrice(
+                              item['discounted_price'] ?? item['price'],
+                            );
+                            final totalPrice = qty * price;
+
                             cartMessage +=
                                 "• ${item['name']} (${item['weight'] ?? ''})\n";
                             cartMessage += "   Qty: $qty\n";
                             cartMessage +=
-                                "   Price: ${item['discounted_price'] ?? item['price']}\n\n";
+                                "   Price per unit: ₹${price.toStringAsFixed(2)}\n";
+                            cartMessage +=
+                                "   Total: ₹${totalPrice.toStringAsFixed(2)}\n\n";
                           }
                         }
 
                         cartMessage += "--------------------------------\n";
+                        cartMessage +=
+                            "Total Items Qty: $totalItemsQty\n"; // <--- added total qty here
                         cartMessage +=
                             "Items Total: ₹${calculateItemsTotal().toStringAsFixed(2)}\n";
                         cartMessage +=
@@ -333,13 +364,14 @@ class _CartPageState extends State<CartPage> {
                                     phone,
                                     address,
                                   ) async {
-                                    String phoneNumber = "918860700947";
-                                    String whatsappUrl =
-                                        "https://wa.me/$phoneNumber?text=${Uri.encodeComponent(finalMessage)}";
-                                    launchUrl(
-                                      Uri.parse(whatsappUrl),
-                                      mode: LaunchMode.externalApplication,
-                                    );
+                                    // String phoneNumber = "918860700947";
+                                    // String whatsappUrl =
+                                    //     "https://wa.me/$phoneNumber?text=${Uri.encodeComponent(finalMessage)}";
+                                    // launchUrl(
+                                    //   Uri.parse(whatsappUrl),
+                                    //   mode: LaunchMode.externalApplication,
+                                    // );
+                                    print('Final Message' + finalMessage);
                                     if (saveAddress) {
                                       final prefs =
                                           await SharedPreferences.getInstance();
@@ -412,5 +444,17 @@ class _CartPageState extends State<CartPage> {
         child: Icon(icon, color: color, size: 18),
       ),
     );
+  }
+
+  // Helper: parse price string/double safely
+  double parsePrice(dynamic price) {
+    if (price == null) return 0.0;
+    if (price is double) return price;
+    if (price is int) return price.toDouble();
+    if (price is String) {
+      final cleaned = price.replaceAll(RegExp(r'[₹,\s]'), '');
+      return double.tryParse(cleaned) ?? 0.0;
+    }
+    return 0.0;
   }
 }
